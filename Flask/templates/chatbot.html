@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Output</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        body
+        {
+        background-image: url("https://www.apptunix.com/blog/wp-content/uploads/sites/3/2021/04/show-chatbots-for-banking.jpg");
+        background-size: cover;
+        }
+    </style>
+</head>
+<body>
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "b5dfbad0-cbc6-4961-a184-4966dd8ba21f", // The ID of this integration.
+      region: "us-south", // The region your integration is hosted in.
+      serviceInstanceID: "2b1fb018-410e-4536-b69e-dbf938d6211c", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js"
+    document.head.appendChild(t);
+  });
+</script>
+</body>
+</html>
